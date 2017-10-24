@@ -20,7 +20,7 @@
             android:padding="15dp"
             android:textColor="@android:color/black"
             android:textSize="24sp"
-            android:digits="+-*/0123456789"/>
+            android:digits="+-*/.0123456789"/>
 
         <EditText
             android:id="@+id/result"
