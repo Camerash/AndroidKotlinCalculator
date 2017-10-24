@@ -46,12 +46,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setNumberPadOnClickListener()
-        setActionButtonOnClickListener()
-        setMiscButtonOnClickListener()
+        setupNumberPadOnClickListener()
+        setupActionButtonOnClickListener()
+        setupMiscButtonOnClickListener()
     }
 
-    private fun setNumberPadOnClickListener() {
+    private fun setupNumberPadOnClickListener() {
         val btnList = Arrays.asList(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
         for(i in 0 until btnList.size) {
             btnList[i].setOnClickListener {
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setActionButtonOnClickListener() {
+    private fun setupActionButtonOnClickListener() {
         val btnList = Arrays.asList(add, subtract, multiply, divide)
         val actionList = Arrays.asList(ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION)
         for (i in 0 until btnList.size) {
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setMiscButtonOnClickListener() {
+    private fun setupMiscButtonOnClickListener() {
         dot.setOnClickListener {
             //TODO: dot button on click
         }
